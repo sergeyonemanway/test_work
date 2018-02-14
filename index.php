@@ -60,6 +60,12 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['rooms'])){
                     ?>
                 </select>
             </div>
+            <div class="form-block">
+                <label class="d-ib" for="only_photo">
+                    <input id="only_photo" type="checkbox" name="only_photo" <?= (isset($_GET['only_photo']) && $_GET['only_photo'] == 'on') ? 'checked' : ''; ?>>
+                    <span>Только с фото</span>
+                </label>
+            </div>
             <button type="submit">Найти</button>
         </form>
     </div>
