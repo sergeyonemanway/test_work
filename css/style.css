@@ -1,0 +1,195 @@
+* {
+  outline: none;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-family: 'Arial', 'Calibri', sans-serif;
+}
+.container {
+  width: 95%;
+  margin: 50px auto 0;
+}
+.container .form-search {
+  width: 30%;
+  float: left;
+}
+.container .form-search form {
+  width: 80%;
+  padding: 30px 10%;
+  background: #c6ddec;
+  border-radius: 4px;
+}
+.container .form-search form .heading-form {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .form-search form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  float: left;
+}
+.container .form-search form label.d-ib {
+  display: inline-block;
+  width: auto;
+  margin: 5px 10px 0 10px;
+}
+.container .form-search form label.d-ib:first-child {
+  margin-left: 0;
+}
+.container .form-search form label.d-ib span {
+  display: inline-block;
+  margin-bottom: 0;
+  color: #333333;
+  margin-left: 3px;
+  position: relative;
+  top: -2px;
+}
+.container .form-search form label span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #555555;
+}
+.container .form-search form label select {
+  width: 100%;
+  display: block;
+  padding: 4px 0 5px;
+  border: none;
+  background: #ffffff;
+  font-family: 'Arial', 'Calibri', sans-serif;
+  font-size: 13px;
+}
+.container .form-search form label input {
+  display: inline-block;
+  width: 92%;
+  padding: 6px 4% 8px;
+  border: none;
+  background: #ffffff;
+  font-family: 'Arial', 'Calibri', sans-serif;
+  font-size: 13px;
+}
+.container .form-search form label input:focus {
+  box-shadow: 1px 5px 10px #eeeeee;
+}
+.container .form-search form .form-block {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  float: left;
+}
+.container .form-search form .form-block .form-block-heading {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #555555;
+}
+.container .form-search form .form-block .form-block-container {
+  text-align: center;
+}
+.container .form-search form .form-block select {
+  width: 100%;
+  display: block;
+  padding: 6px 4% 8px;
+  border: none;
+  background: #ffffff;
+  font-family: 'Arial', 'Calibri', sans-serif;
+  font-size: 13px;
+}
+.container .form-search form .form-block input {
+  display: inline-block;
+  width: 92%;
+  margin: 0;
+  padding: 6px 4% 8px;
+  border: none;
+  background: #ffffff;
+  font-family: 'Arial', 'Calibri', sans-serif;
+  font-size: 13px;
+}
+.container .form-search form .form-block input[type=checkbox] {
+  width: auto;
+  border: none;
+  padding: 0;
+}
+.container .form-search form .form-block input:focus {
+  box-shadow: 1px 5px 10px #eeeeee;
+}
+.container .form-search form .form-block input.w-45 {
+  width: 37%;
+  padding: 4px 4% 5px;
+  float: left;
+}
+.container .form-search form .form-block input.right {
+  float: right;
+}
+.container .form-search form button {
+  display: inline-block;
+  height: 36px;
+  margin-top: 10px;
+  line-height: 35px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 4px;
+  background: #1d6fa7;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+}
+.container .form-search form button:hover {
+  box-shadow: 1px 10px 25px #dddddd;
+  cursor: pointer;
+}
+.container .result-block {
+  width: 65%;
+  float: right;
+}
+table {
+  border-radius: 5px;
+  border-spacing: 0;
+}
+table tr td {
+  padding: 5px 10px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+}
+table tr td:first-child {
+  border-left: 1px solid #cccccc;
+  text-align: left;
+}
+table tr td p {
+  margin: 0;
+}
+table tr td a {
+  text-decoration: none;
+  color: #005da4;
+}
+table tr:first-child {
+  background: #e1e1e1;
+}
+table tr:nth-of-type(2n) {
+  background: #f8f8f8;
+}
+table tr:last-child td {
+  border-bottom: 1px solid #cccccc;
+}
+.error {
+  width: 84%;
+  float: left;
+  margin-top: 8px;
+  padding: 5px 8%;
+  border-radius: 5px;
+  background: #e96059;
+  font-size: 12px;
+  font-style: italic;
+}
+.null {
+  background: #cdd3e2;
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+}

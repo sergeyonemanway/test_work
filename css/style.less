@@ -1,0 +1,250 @@
+*{
+  outline: none;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-family: 'Arial', 'Calibri', sans-serif;
+}
+
+.container{
+  width: 95%;
+  margin: 50px auto 0;
+
+  .form-search{
+    width: 30%;
+    float: left;
+
+    form{
+      width: 80%;
+      padding: 30px 10%;
+      background: #c6ddec;
+      border-radius: 4px;
+
+      .heading-form{
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+
+      label{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        float: left;
+
+        &.d-ib{
+          display: inline-block;
+          width: auto;
+          margin: 5px 10px 0 10px;
+
+          &:first-child{
+            margin-left: 0;
+          }
+
+          span{
+            display: inline-block;
+            margin-bottom: 0;
+            color: #333333;
+            margin-left: 3px;
+            position: relative;
+            top: -2px;
+          }
+
+        }
+
+        span{
+          display: block;
+          margin-bottom: 8px;
+          font-size: 12px;
+          color: #555555;
+        }
+
+        select{
+          width: 100%;
+          display: block;
+          padding: 4px 0 5px;
+          border: none;
+          background: #ffffff;
+          font-family: 'Arial', 'Calibri', sans-serif;
+          font-size: 13px;
+        }
+
+        input{
+          display: inline-block;
+          width: 92%;
+          padding: 6px 4% 8px;
+          border: none;
+          background: #ffffff;
+          font-family: 'Arial', 'Calibri', sans-serif;
+          font-size: 13px;
+
+          &:focus{
+            box-shadow: 1px 5px 10px #eeeeee;
+          }
+
+
+        }
+
+      }
+
+      .form-block{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        float: left;
+
+        .form-block-heading{
+          display: block;
+          margin-bottom: 8px;
+          font-size: 12px;
+          color: #555555;
+        }
+
+        .form-block-container{
+          text-align: center;
+        }
+
+        select{
+          width: 100%;
+          display: block;
+          padding: 6px 4% 8px;
+          border: none;
+          background: #ffffff;
+          font-family: 'Arial', 'Calibri', sans-serif;
+          font-size: 13px;
+        }
+
+        input{
+          display: inline-block;
+          width: 92%;
+          margin: 0;
+          padding: 6px 4% 8px;
+          border: none;
+          background: #ffffff;
+          font-family: 'Arial', 'Calibri', sans-serif;
+          font-size: 13px;
+
+          &[type=checkbox]{
+            width: auto;
+            border: none;
+            padding: 0;
+          }
+
+          &:focus{
+            box-shadow: 1px 5px 10px #eeeeee;
+          }
+
+          &.w-45{
+            width: 37%;
+            padding: 4px 4% 5px;
+            float: left;
+          }
+
+          &.right{
+            float: right;
+          }
+
+        }
+
+      }
+
+      button{
+        display: inline-block;
+        height: 36px;
+        margin-top: 10px;
+        line-height: 35px;
+        padding: 0 30px;
+        border: none;
+        border-radius: 4px;
+        background: #1d6fa7;
+        text-align: center;
+        font-size: 13px;
+        color: #ffffff;
+
+        &:hover{
+          box-shadow: 1px 10px 25px #dddddd;
+          cursor: pointer;
+        }
+
+      }
+
+    }
+
+  }
+
+  .result-block{
+    width: 65%;
+    float: right;
+  }
+
+}
+
+table{
+  border-radius: 5px;
+  border-spacing: 0;
+
+  tr{
+
+    td{
+      padding: 5px 10px;
+      border-top: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      text-align: center;
+
+      &:first-child{
+        border-left: 1px solid #cccccc;
+        text-align: left;
+      }
+
+      p{
+        margin: 0;
+      }
+
+      a{
+        text-decoration: none;
+        color: #005da4;
+      }
+
+    }
+
+    &:first-child{
+      background: #e1e1e1;
+    }
+
+    &:nth-of-type(2n){
+      background: #f8f8f8;
+    }
+
+    &:last-child{
+
+      td{
+        border-bottom: 1px solid #cccccc;
+      }
+
+    }
+
+  }
+
+}
+
+.error{
+  width: 84%;
+  float: left;
+  margin-top: 8px;
+  padding: 5px 8%;
+  border-radius: 5px;
+  background: #e96059;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.null{
+  background: #cdd3e2;
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+}
