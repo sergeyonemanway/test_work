@@ -47,7 +47,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['rooms'])){
             </div>
             <div class="form-block">
                 <div class="form-block-heading">Количество комнат</div>
-                <select size="3" name="rooms[]" multiple>
+                <select required size="3" name="rooms[]" multiple>
                     <?php
                         $arr = [
                             '1' => '1 комната',

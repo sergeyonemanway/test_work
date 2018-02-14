@@ -6,9 +6,10 @@
  * @return string
  */
 function getTypeUrl(){
-	$defaultUrl = "http://www.50.bn.ru/sale/city/flats/?sort=price_for_sort&sortorder=ASC";
-	return $url = (isset($_GET['type'])) ? "http://www.50.bn.ru/sale/{$_GET['type']}/?sort=price_for_sort&sortorder=ASC" : $defaultUrl;
+	$defaultUrl = "http://www.50.bn.ru/sale/city/flats/?sort=price&sortorder=ASC&price%5Bfrom%5D=&price%5Bto%5D=";
+	return $url = (isset($_GET['_tokenSearch'])) ? "http://www.50.bn.ru/sale/{$_GET['type']}/?sort=price&sortorder=ASC" : $defaultUrl;
 }
+
 
 /**
  * Very primitive price check
