@@ -67,8 +67,8 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['rooms'])){
             <div class="form-block">
                 <div class="form-block-heading">Цена(рублей)</div>
                 <div class="form-block-container">
-                    <input class="w-45" name="price[from]" type="text" placeholder="от" value="<?= (isset($_GET['price']['from'])) ? $_GET['price']['from'] : '' ?>">
-                    <input class="w-45 right" name="price[to]" type="text" placeholder="до" value="<?= (isset($_GET['price']['from'])) ? $_GET['price']['to'] : '' ?>">
+                    <input class="w-45" name="price[from]" type="text" placeholder="от" value="<?= (isset($_GET['price']['from'])) ? clearRequest($_GET['price']['from']) : '' ?>">
+                    <input class="w-45 right" name="price[to]" type="text" placeholder="до" value="<?= (isset($_GET['price']['from'])) ? clearRequest($_GET['price']['to'] ): '' ?>">
                 </div>
 				<?= primitiveCheckPrice(); ?>
             </div>
